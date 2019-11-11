@@ -12,7 +12,7 @@ app.use('/public', express.static(process.cwd() + '/public'));
 
 // Upload file
 app.post('/api/fileanalyse', upload.single('upfile'), function(req, res, next) {
-  res.json({ name: req.file.filename, size: req.file.size });
+  res.json({ name: req.file.originalname, size: req.file.size });
 });
 
 

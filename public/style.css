@@ -3,8 +3,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	color: #222;
-	background-color: #ECF0F1;
+	color: #282828;
+	background-color: #fbf1e7;
 	text-align: center;
 }
 
@@ -34,6 +34,18 @@ input {
   margin: 10px auto;
 
 }
+
+input {
+  background-color: #282828;
+  color: #fbf1e7;
+  border: solid 2px #282828;
+  border-radius: 5px;
+}
+
+input:hover {
+	background-color: #222222;
+}
+
 input#button {
   width: 230px;
 }
