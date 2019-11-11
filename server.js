@@ -11,8 +11,9 @@ app.use(cors());
 app.use('/public', express.static(process.cwd() + '/public'));
 
 // Upload file
-app.post('/api/fileanalyse', )
-
+app.post('/api/fileanalyse', upload.single('upfile'), function(req, res, next) {
+  res.json({ name: req.file.filename, size: req.file.size });
+});
 
 
 app.get('/', function (req, res) {
